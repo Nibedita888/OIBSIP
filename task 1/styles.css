@@ -1,0 +1,18 @@
+/* --- Global Resets & Typography --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg-dark: #0f172a;
+  --bg-light: #ffffff;
+  --bg-alt: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --font-family: 'Inter', system-ui, sans-serif;
+}
