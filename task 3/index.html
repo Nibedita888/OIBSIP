@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tempora | Temperature Converter</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <!-- Background Decoration -->
+        <div class="shape shape-one"></div>
+        <div class="shape shape-two"></div>
+
+        <!-- Main Converter -->
+        <section class="converter-card">
+
+            <!-- Header -->
+            <header class="header">
+
+                <div class="logo-icon">°</div>
+
+                <p class="small-title">TEMPERATURE TOOL</p>
+
+                <h1>Temperature Converter</h1>
+
+                <p class="subtitle">
+                    Convert temperatures between Celsius,
+                    Fahrenheit and Kelvin.
+                </p>
+
+            </header>
+
+
+            <!-- Converter Form -->
+            <div class="converter-form">
+
+                <!-- Temperature Input -->
+                <div class="form-group">
+
+                    <label for="temperature">
+                        Temperature
+                    </label>
+
+                    <input
+                        type="number"
+                        id="temperature"
+                        placeholder="Enter a value"
+                        step="any"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <!-- Unit Selection -->
+                <div class="form-group">
+
+                    <label for="unit">
+                        Convert From
+                    </label>
+
+                    <select id="unit">
+
+                        <option value="celsius">
+                            Celsius (°C)
+                        </option>
+
+                        <option value="fahrenheit">
+                            Fahrenheit (°F)
+                        </option>
+
+                        <option value="kelvin">
+                            Kelvin (K)
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Error -->
+                <div
+                    id="errorMessage"
+                    class="error-message"
+                    role="alert"
+                ></div>
+
+
+                <!-- Button -->
+                <button
+                    type="button"
+                    id="convertBtn"
+                    class="convert-btn"
+                >
+                    Convert Temperature
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <!-- Results -->
+            <section class="results">
+
+                <div class="results-header">
+                    <h2>Converted Results</h2>
+                    <span>All units</span>
+                </div>
+
+
+                <div class="result-grid">
+
+                    <!-- Celsius -->
+                    <div class="result-card">
+
+                        <div class="result-icon">°C</div>
+
+                        <div>
+                            <p>Celsius</p>
+
+                            <strong id="celsiusResult">
+                                --
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Fahrenheit -->
+                    <div class="result-card">
+
+                        <div class="result-icon">°F</div>
+
+                        <div>
+                            <p>Fahrenheit</p>
+
+                            <strong id="fahrenheitResult">
+                                --
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Kelvin -->
+                    <div class="result-card">
+
+                        <div class="result-icon">K</div>
+
+                        <div>
+                            <p>Kelvin</p>
+
+                            <strong id="kelvinResult">
+                                --
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Information -->
+            <div class="info-box">
+
+                <span>i</span>
+
+                <p>
+                    Absolute zero is −273.15°C.
+                    Temperatures below this value are not valid.
+                </p>
+
+            </div>
+
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Built with HTML, CSS & JavaScript</p>
+                <p>Tempora © 2026</p>
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
